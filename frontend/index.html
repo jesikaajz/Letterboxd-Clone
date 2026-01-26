@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark"> <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Letterboxd Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-light">
+  <!-- MODAL OVERLAY -->
+  <div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:999;"></div>
+
+  <!-- LOGIN -->
+<section id="loginView" class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-secondary text-white shadow">
+          <div class="card-body p-4">
+            <h2 class="text-center mb-4">Login</h2>
+            <div class="mb-3">
+              <input id="username" class="form-control" placeholder="Username" />
+            </div>
+            <div class="mb-3">
+              <input id="password" type="password" class="form-control" placeholder="Password" />
+            </div>
+            <button id="loginBtn" class="btn btn-success w-100 mb-3">Login</button>
+            <p class="text-center">
+              No account? <button id="goToRegisterBtn" class="btn btn-link text-info">Register</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="registerView" class="container mt-5" style="display:none">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card bg-secondary text-white shadow">
+          <div class="card-body p-4">
+            <h2 class="text-center mb-4">Register</h2>
+            <div class="mb-3">
+              <input id="registerUsername" class="form-control" placeholder="Username" />
+            </div>
+            <div class="mb-3">
+              <input id="registerPassword" type="password" class="form-control" placeholder="Password" />
+            </div>
+            <button id="registerBtn" class="btn btn-primary w-100 mb-3">Create account</button>
+            <p class="text-center">
+              Already have account? <button id="goToLoginBtn" class="btn btn-link text-info">Login</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="homeView" style="display:none">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary mb-4 sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-success" href="#">Letterboxd Clone</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+            <li class="nav-item">
+              <button id="showMyWatchlistsBtn" class="btn btn-outline-light btn-sm w-100">My Watchlists</button>
+            </li>
+            <li class="nav-item">
+              <button id="showPublicWatchlistsBtn" class="btn btn-outline-info btn-sm w-100">Public Watchlists</button>
+            </li>
+            <li class="nav-item">
+              <button id="showCreateWatchlistBtn" class="btn btn-success btn-sm w-100">+ New Watchlist</button>
+            </li>
+          </ul>
+
+          <div class="d-flex gap-2 align-items-center">
+            <span id="welcomeUser" class="navbar-text me-2 small"></span>
+            <button id="showFiltersBtn" class="btn btn-outline-secondary btn-sm">Filters</button>
+            <button id="showGenresBtn" class="btn btn-outline-secondary btn-sm">Genres</button>
+            <button id="logoutBtn" class="btn btn-outline-danger btn-sm">Logout</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        
+        <aside id="sidebar" class="col-md-3 col-lg-2 mb-4 d-none d-md-block border-end border-secondary">
+          <h5 id="watchlistTitle" class="text-white mb-3">Your Watchlists</h5>
+          <div id="watchlistsList" class="list-group list-group-flush"></div>
+          
+          <div class="mt-4">
+            <small class="text-muted">Active Filters</small>
+            <div id="activeFiltersContainer"></div>
+          </div>
+        </aside>
+
+        <main class="col-md-9 col-lg-10">
+          <div id="mobileWatchlistsContainer" class="d-block d-md-none mb-4"></div>
+          
+          <div class="navigation-buttons mb-3 d-flex gap-2">
+             <button id="showTrendingBtn" class="btn btn-success btn-sm" style="display:none;">
+               ← Back to Trending
+             </button>
+             <button id="showExploreBtn" class="btn btn-primary btn-sm" style="display:none;">
+               ← Back to Explore
+             </button>
+          </div>
+
+          <div id="searchBox" class="input-group mb-4">
+             <input id="searchInput" type="text" class="form-control bg-dark text-white border-secondary" placeholder="Search movies, lists, members..." />
+             <button id="searchBtn" class="btn btn-light">Search</button>
+          </div>
+
+          <div id="watchlistDetail" class="mb-5" style="display:none;">
+             </div>
+
+          <h2 id="trendingTitle" class="mb-3 border-bottom border-secondary pb-2">Trending Movies</h2>
+          <div id="trendingList" class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3"></div>
+
+          <h2 id="searchResultsTitle" class="mb-3 border-bottom border-secondary pb-2" style="display:none;">Search Results</h2>
+          <div id="searchResults" class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3" style="display:none;"></div>
+
+          <h2 id="genreResultsTitle" class="mb-3 border-bottom border-secondary pb-2" style="display:none;"></h2>
+          <div id="genreResultsList" class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3" style="display:none;"></div>
+
+          <h2 id="filteredResultsTitle" class="mb-3 border-bottom border-secondary pb-2" style="display:none;"></h2>
+          <div id="filteredResultsList" class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3" style="display:none;"></div>
+
+          <div id="moviesGrid-pagination" class="d-flex justify-content-center mt-5"></div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATE WATCHLIST MODAL -->
+  <div id="createWatchlistModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#1a1a1a; padding:25px; border-radius:8px; border:1px solid #333; z-index:1000; min-width:300px;">
+    <h3>Create New Watchlist</h3>
+    <input id="watchlistName" placeholder="Watchlist name" style="width:100%; padding:10px; margin:10px 0; background:#333; border:1px solid #555; color:white; border-radius:4px;" />
+    <div style="margin:10px 0;">
+      <label style="color:white;">
+        <input type="checkbox" id="isPublicCheckbox" checked /> Public (visible to all users)
+      </label>
+    </div>
+    <div>
+      <button id="saveWatchlistBtn" style="padding:8px 16px; margin-right:10px; background:#4CAF50; color:white; border:none; border-radius:4px; cursor:pointer;">Create</button>
+      <button id="cancelWatchlistBtn" style="padding:8px 16px; background:#f44336; color:white; border:none; border-radius:4px; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+
+  <!-- FILTERS MODAL -->
+  <div id="filtersModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#1a1a1a; padding:25px; border-radius:8px; border:1px solid #333; z-index:1000; min-width:300px;">
+    <h3>Filter Movies</h3>
+    
+    <div style="margin-bottom:15px;">
+      <label style="color:white; display:block; margin-bottom:5px;">Genre:</label>
+      <select id="filterGenre" style="width:100%; padding:8px; background:#333; border:1px solid #555; color:white; border-radius:4px;">
+        <option value="">All Genres</option>
+      </select>
+    </div>
+    
+    <div style="margin-bottom:15px;">
+      <label style="color:white; display:block; margin-bottom:5px;">Year:</label>
+      <input id="filterYear" type="number" min="1900" max="2025" style="width:100%; padding:8px; background:#333; border:1px solid #555; color:white; border-radius:4px;" placeholder="e.g., 2023" />
+    </div>
+    
+    <div style="margin-bottom:15px;">
+      <label style="color:white; display:block; margin-bottom:5px;">Minimum Rating:</label>
+      <select id="filterMinRating" style="width:100%; padding:8px; background:#333; border:1px solid #555; color:white; border-radius:4px;">
+        <option value="">Any Rating</option>
+        <option value="7">7+</option>
+        <option value="8">8+</option>
+        <option value="9">9+</option>
+      </select>
+    </div>
+    
+    <div style="margin-bottom:15px;">
+      <label style="color:white; display:block; margin-bottom:5px;">Sort by:</label>
+      <select id="filterSortBy" style="width:100%; padding:8px; background:#333; border:1px solid #555; color:white; border-radius:4px;">
+        <option value="popularity.desc">Popularity (Desc)</option>
+        <option value="vote_average.desc">Rating (Desc)</option>
+        <option value="release_date.desc">Release Date (Newest)</option>
+        <option value="release_date.asc">Release Date (Oldest)</option>
+        <option value="title.asc">Title (A-Z)</option>
+      </select>
+    </div>
+    
+    <div>
+      <button id="applyFiltersBtn" style="padding:8px 16px; margin-right:10px; background:#4CAF50; color:white; border:none; border-radius:4px; cursor:pointer;">Apply Filters</button>
+      <button id="cancelFiltersBtn" style="padding:8px 16px; background:#f44336; color:white; border:none; border-radius:4px; cursor:pointer;">Cancel</button>
+    </div>
+  </div>
+
+
+  
+
+  <!-- MOVIE DETAIL -->
+  <section id="movieDetailView" style="display:none">
+    <button id="backToHomeBtn" class="back-btn"></button>
+    <div id="movieDetailContent"></div>
+  </section>
+
+  <!-- GENRES DROPDOWN -->
+  <div id="genresDropdown" class="genres-dropdown" style="display:none; position:fixed; background:#1a1a1a; border:1px solid #333; border-radius:8px; padding:10px; z-index:1000; max-height:300px; overflow-y:auto; min-width:200px;"></div>
+
+  <script type="module" src="src/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

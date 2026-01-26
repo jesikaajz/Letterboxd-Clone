@@ -1,0 +1,619 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1234"
+    },
+    {
+      "id": "8856",
+      "username": "jesika",
+      "password": "1234"
+    },
+    {
+      "id": "2c3e",
+      "username": "gerard",
+      "password": "1234"
+    },
+    {
+      "id": "b998",
+      "username": "israel",
+      "password": "n4ruto2011"
+    }
+  ],
+  "watchlists": [
+    {
+      "id": "2ba7",
+      "name": "jesika's favorites moviess :)!!!!!!",
+      "userId": "8856",
+      "isPublic": true
+    },
+    {
+      "id": "534a",
+      "name": "jesika's favorites classics",
+      "userId": "8856",
+      "isPublic": false
+    },
+    {
+      "id": "473c",
+      "name": "jesika's movies to make her cry :(",
+      "userId": "8856",
+      "isPublic": true
+    },
+    {
+      "id": "a275",
+      "name": "jesika's favorites in the whole world",
+      "userId": "8856",
+      "isPublic": true
+    },
+    {
+      "id": "2458",
+      "name": "+",
+      "userId": "8856",
+      "isPublic": true
+    },
+    {
+      "id": "a8ff",
+      "name": "jh",
+      "userId": "8856",
+      "isPublic": true
+    },
+    {
+      "id": "7d9b",
+      "name": "mona",
+      "userId": "8856",
+      "isPublic": true
+    },
+    {
+      "id": "3069",
+      "name": "22",
+      "userId": "1",
+      "isPublic": true
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "externalId": 550
+    },
+    {
+      "id": "5eb8",
+      "externalId": 1084242
+    },
+    {
+      "id": "010d",
+      "externalId": 967941
+    },
+    {
+      "id": "0b5d",
+      "externalId": 1259102
+    },
+    {
+      "id": "0c23",
+      "externalId": 1317288
+    },
+    {
+      "id": "b461",
+      "externalId": 701387
+    },
+    {
+      "id": "fc48",
+      "externalId": 425274
+    },
+    {
+      "id": "7295",
+      "externalId": 1311031
+    },
+    {
+      "id": "8c18",
+      "externalId": 7451
+    },
+    {
+      "id": "9fda",
+      "externalId": 1234731
+    },
+    {
+      "id": "b288",
+      "externalId": 982843
+    },
+    {
+      "id": "a6a7",
+      "externalId": 1228246
+    },
+    {
+      "id": "b9c8",
+      "externalId": 991494
+    },
+    {
+      "id": "a076",
+      "externalId": 862
+    },
+    {
+      "id": "8dd6",
+      "externalId": 83533
+    },
+    {
+      "id": "7642",
+      "externalId": 19995
+    },
+    {
+      "id": "84c8",
+      "externalId": 812583
+    },
+    {
+      "id": "11a2",
+      "externalId": 533533
+    },
+    {
+      "id": "bd7a",
+      "externalId": 628847
+    },
+    {
+      "id": "8bd2",
+      "externalId": 1214931
+    },
+    {
+      "id": "9486",
+      "externalId": 1368166
+    },
+    {
+      "id": "9f3d",
+      "externalId": 282908
+    },
+    {
+      "id": "996d",
+      "externalId": 947926
+    },
+    {
+      "id": "79fc",
+      "externalId": 937315
+    },
+    {
+      "id": "db31",
+      "externalId": 1567451
+    },
+    {
+      "id": "0859",
+      "externalId": 1054867
+    },
+    {
+      "id": "c2c8",
+      "externalId": 1223601
+    },
+    {
+      "id": "5b07",
+      "externalId": 301528
+    },
+    {
+      "id": "b0f8",
+      "externalId": 1062722
+    },
+    {
+      "id": "c543",
+      "externalId": 320327
+    },
+    {
+      "id": "fb0d",
+      "externalId": 298883
+    },
+    {
+      "id": "f13b",
+      "externalId": 379933
+    },
+    {
+      "id": "b358",
+      "externalId": 287070
+    },
+    {
+      "id": "1364",
+      "externalId": 863
+    },
+    {
+      "id": "756d",
+      "externalId": 10193
+    },
+    {
+      "id": "7ed2",
+      "externalId": 280221
+    },
+    {
+      "id": "889b",
+      "externalId": 346698
+    },
+    {
+      "id": "297e",
+      "externalId": 1362179
+    },
+    {
+      "id": "b003",
+      "externalId": 772
+    },
+    {
+      "id": "aeb0",
+      "externalId": 568124
+    },
+    {
+      "id": "979c",
+      "externalId": 798645
+    },
+    {
+      "id": "35a4",
+      "externalId": 1084244
+    },
+    {
+      "id": "0b91",
+      "externalId": 533535
+    },
+    {
+      "id": "9f6f",
+      "externalId": 756397
+    },
+    {
+      "id": "48f3",
+      "externalId": 1252037
+    },
+    {
+      "id": "11a3",
+      "externalId": 182026
+    },
+    {
+      "id": "2e51",
+      "externalId": 1233413
+    },
+    {
+      "id": "1002",
+      "externalId": 277834
+    },
+    {
+      "id": "beca",
+      "externalId": 38757
+    },
+    {
+      "id": "dc69",
+      "externalId": 1144443
+    },
+    {
+      "id": "1a9d",
+      "externalId": 455535
+    },
+    {
+      "id": "2d4f",
+      "externalId": 1306368
+    },
+    {
+      "id": "55aa",
+      "externalId": 1208348
+    }
+  ],
+  "watchlist_movies": [
+    {
+      "id": "3133",
+      "watchlistId": "534a",
+      "movieId": "a6a7"
+    },
+    {
+      "id": "a051",
+      "watchlistId": "a275",
+      "movieId": "0c23"
+    },
+    {
+      "id": "7b12",
+      "watchlistId": "534a",
+      "movieId": "1002"
+    },
+    {
+      "id": "ffdb",
+      "watchlistId": "534a",
+      "movieId": "010d"
+    },
+    {
+      "id": "6942",
+      "watchlistId": "473c",
+      "movieId": "010d"
+    },
+    {
+      "id": "5b12",
+      "watchlistId": "2458",
+      "movieId": "010d"
+    },
+    {
+      "id": "07b4",
+      "watchlistId": "2ba7",
+      "movieId": "48f3"
+    },
+    {
+      "id": "ecfc",
+      "watchlistId": "534a",
+      "movieId": "48f3"
+    },
+    {
+      "id": "2f31",
+      "watchlistId": "473c",
+      "movieId": "48f3"
+    },
+    {
+      "id": "386e",
+      "watchlistId": "a275",
+      "movieId": "48f3"
+    },
+    {
+      "id": "98ec",
+      "watchlistId": "2ba7",
+      "movieId": "0c23"
+    },
+    {
+      "id": "a06f",
+      "watchlistId": "3069",
+      "movieId": "2d4f"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "1",
+      "userId": "1",
+      "movieId": "1",
+      "score": 5,
+      "createdAt": "2025-01-04T18:20:00Z"
+    },
+    {
+      "id": "245f",
+      "userId": "8856",
+      "score": 5,
+      "createdAt": "2025-12-31T13:39:45.716Z"
+    },
+    {
+      "id": "a846",
+      "userId": "1",
+      "movieId": "84c8",
+      "score": 5,
+      "createdAt": "2025-12-31T15:54:47.501Z"
+    },
+    {
+      "id": "9ca3",
+      "userId": "b998",
+      "movieId": "a6a7",
+      "score": 4,
+      "createdAt": "2025-12-31T16:46:26.485Z"
+    },
+    {
+      "id": "1165",
+      "userId": "b998",
+      "movieId": "8dd6",
+      "score": 5,
+      "createdAt": "2025-12-31T16:46:53.194Z"
+    },
+    {
+      "id": "e4ab",
+      "userId": "b998",
+      "movieId": "0859",
+      "score": 4,
+      "createdAt": "2025-12-31T16:46:55.053Z"
+    },
+    {
+      "id": "010d",
+      "userId": "b998",
+      "movieId": "c543",
+      "score": 5,
+      "createdAt": "2025-12-31T16:47:04.866Z"
+    },
+    {
+      "id": "c0a0",
+      "userId": "b998",
+      "movieId": "fb0d",
+      "score": 5,
+      "createdAt": "2025-12-31T16:47:07.333Z"
+    },
+    {
+      "id": "b297",
+      "userId": "b998",
+      "movieId": "f13b",
+      "score": 5,
+      "createdAt": "2025-12-31T16:47:09.121Z"
+    },
+    {
+      "id": "e2de",
+      "userId": "b998",
+      "movieId": "5eb8",
+      "score": 5,
+      "createdAt": "2026-01-01T15:07:21.236Z"
+    },
+    {
+      "id": "9986",
+      "userId": "b998",
+      "movieId": "b358",
+      "score": 5,
+      "createdAt": "2026-01-01T15:07:22.622Z"
+    },
+    {
+      "id": "ebfb",
+      "userId": "b998",
+      "movieId": "8bd2",
+      "score": 5,
+      "createdAt": "2026-01-01T15:07:36.968Z"
+    },
+    {
+      "id": "7b11",
+      "userId": "b998",
+      "movieId": "010d",
+      "score": 5,
+      "createdAt": "2026-01-01T15:07:45.356Z"
+    },
+    {
+      "id": "af01",
+      "userId": "b998",
+      "movieId": "7295",
+      "score": 2,
+      "createdAt": "2026-01-01T15:07:57.691Z"
+    },
+    {
+      "id": "8045",
+      "userId": "b998",
+      "movieId": "b461",
+      "score": 5,
+      "createdAt": "2026-01-01T15:08:00.008Z"
+    },
+    {
+      "id": "2a56",
+      "userId": "b998",
+      "movieId": "0b5d",
+      "score": 5,
+      "createdAt": "2026-01-01T15:19:39.721Z"
+    },
+    {
+      "id": "94ae",
+      "userId": "b998",
+      "movieId": "8c18",
+      "score": 4,
+      "createdAt": "2026-01-01T15:31:35.291Z"
+    },
+    {
+      "id": "e7d7",
+      "userId": "b998",
+      "movieId": "11a2",
+      "score": 5,
+      "createdAt": "2026-01-01T15:31:56.290Z"
+    },
+    {
+      "id": "d326",
+      "userId": "1",
+      "movieId": "db31",
+      "score": 5,
+      "createdAt": "2026-01-01T18:47:49.582Z"
+    },
+    {
+      "id": "6436",
+      "userId": "1",
+      "movieId": "8dd6",
+      "score": 5,
+      "createdAt": "2026-01-02T22:27:38.642Z"
+    },
+    {
+      "id": "8fa4",
+      "userId": "1",
+      "movieId": "9fda",
+      "score": 5,
+      "createdAt": "2026-01-02T23:05:20.597Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "userId": "1",
+      "movieId": "1",
+      "text": "Amazing movie!",
+      "createdAt": "2025-01-06T21:00:00Z"
+    },
+    {
+      "id": "efce",
+      "userId": "8856",
+      "movieId": "8dd6",
+      "text": "hola",
+      "createdAt": "2025-12-31T14:06:08.057Z"
+    },
+    {
+      "id": "1fa9",
+      "userId": "1",
+      "movieId": "8dd6",
+      "text": "hola buenas",
+      "createdAt": "2025-12-31T14:06:39.207Z"
+    },
+    {
+      "id": "c628",
+      "userId": "8856",
+      "movieId": "11a2",
+      "text": "hola",
+      "createdAt": "2025-12-31T14:08:23.746Z"
+    },
+    {
+      "id": "3c1d",
+      "userId": "8856",
+      "movieId": "a076",
+      "text": "hola como estas",
+      "createdAt": "2025-12-31T14:09:48.638Z"
+    },
+    {
+      "id": "be40",
+      "userId": "8856",
+      "movieId": "84c8",
+      "text": "holaaaaaaaaaaaaaaaaaaaaaaa",
+      "createdAt": "2025-12-31T15:51:36.213Z"
+    },
+    {
+      "id": "c8e7",
+      "userId": "8856",
+      "movieId": "9486",
+      "text": ":)",
+      "createdAt": "2025-12-31T16:01:54.220Z"
+    },
+    {
+      "id": "ffce",
+      "userId": "8856",
+      "movieId": "8dd6",
+      "text": "hola no entiendo muchas cosas de la pelicula, son personas azules??",
+      "createdAt": "2025-12-31T16:04:38.066Z"
+    },
+    {
+      "id": "38d4",
+      "userId": "8856",
+      "movieId": "0c23",
+      "text": "Tricks you into thinking it'll be a normal sports movie for 30 minutes before evolving into the most batshit, nightmarish, Safdie-esque Safdie comedy of errors to date. The third act of this might be the most exhilarated I've been by a movie all decade.",
+      "createdAt": "2025-12-31T16:42:27.154Z"
+    },
+    {
+      "id": "4945",
+      "userId": "8856",
+      "movieId": "0c23",
+      "text": "M(arty) M(auser)\n\nW(illy) W(onka)",
+      "createdAt": "2025-12-31T16:42:42.007Z"
+    },
+    {
+      "id": "77fe",
+      "userId": "8856",
+      "movieId": "0c23",
+      "text": "Marty Supreme didn’t quite land for me. While Timothée Chalamet’s performance is undeniably strong and committed, many of the characters felt deeply flawed in ways that made it hard to connect or care. I can appreciate the acting and craftsmanship, but overall this wasn’t a feel-good watch and ultimately just wasn’t for me.",
+      "createdAt": "2025-12-31T16:42:58.017Z"
+    },
+    {
+      "id": "e314",
+      "userId": "b998",
+      "movieId": "a6a7",
+      "text": "la mejor pelicula q he visto en la vida",
+      "createdAt": "2025-12-31T16:46:42.893Z"
+    },
+    {
+      "id": "b099",
+      "userId": "b998",
+      "movieId": "010d",
+      "text": ":)",
+      "createdAt": "2026-01-01T15:07:51.340Z"
+    },
+    {
+      "id": "b5c5",
+      "userId": "8856",
+      "movieId": "a076",
+      "text": ":P",
+      "createdAt": "2026-01-01T15:52:18.570Z"
+    },
+    {
+      "id": "fca1",
+      "userId": "8856",
+      "movieId": "010d",
+      "text": "w",
+      "createdAt": "2026-01-02T15:18:31.411Z"
+    },
+    {
+      "id": "7b38",
+      "userId": "8856",
+      "movieId": "2e51",
+      "text": "a",
+      "createdAt": "2026-01-02T19:40:54.954Z"
+    },
+    {
+      "id": "2ffa",
+      "userId": "8856",
+      "movieId": "fc48",
+      "text": "2",
+      "createdAt": "2026-01-02T22:59:24.627Z"
+    }
+  ]
+}
